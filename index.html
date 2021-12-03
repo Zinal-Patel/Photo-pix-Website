@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 <!-- we need to link google icons, font awesome icons, etc and to add icons to our page -->
 
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="bower_components/aos/dist/aos.css"> -->
+<!-- the above link is to add AOS aka Animate On Scroll library. we can set animation to the elements as they scroll into the view or viewport. -->
     <title>Document</title>
 </head>
 <body>
@@ -32,14 +34,168 @@
         </nav>
         <section class="h-text">
             <i class="fa fa-camera" id="camera"></i>
-            <h1>Capturing the moments that captivate your heart.</h1>
+            <h1 data-aos="fade-up" data-aos-delay="500">Capturing the moments that captivate your heart.</h1>
             <input type="text" name="" placeholder="search here...">
             <button><i class="fa fa-search"></i></button>
         </section>
     </header>
 
 
+    <section class="filter-gallery">
+        <div class="portfolio-menu">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".nature">Nature</li>
+                <li data-filter=".fashion">Fashion</li>
+                <li data-filter=".wedding">Wedding</li>
+
+            </ul>
+        </div>
+        <div class="portfolio-item">
+
+            <div class="item nature" data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+                <!-- offset is like setting a threshold. the animation occurs when the scroll crosses the threshold  -->
+                <img src="img/p1.jpg" width="100" height="100">
+            </div>
+
+            <div class="item fashion" class="item nature" data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+                <img src="img/p2.jpg" width="100" height="100">
+            </div>
+
+            <div class="item wedding" class="item nature" data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+                <img src="img/p3.jpg" width="100" height="100">
+            </div>
+
+            <div class="item nature" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
+                <img src="img/p4.jpg" width="100" height="100">
+            </div>
+
+            <div class="item fashion" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
+                <img src="img/p5.jpg" width="100" height="100">
+            </div>
+
+            <div class="item wedding" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+                <img src="img/p6.jpg" width="100" height="100">
+            </div>  
+
+            <div class="item nature" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+                <img src="img/p7.jpg" width="100" height="100">
+            </div>
+
+            <div class="item fashion" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
+                <img src="img/p8.jpg" width="100" height="100">
+            </div>
+
+            <div class="item wedding" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+                <img src="img/p9.jpg" width="100" height="100">
+            </div>
+        </div>
+    </section>
     
+    <section class="member">
+        <div class="member-info" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+            <h1>Our <span>Informations</span></h1>
+            <p>What our member says</p>
+        </div>
+        <div class="member-card" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="200">
+            <img src="img/member.png">
+            <p>Nature is made of everything we see around us – trees, flowers, plants, animals, sky, mountains, forests and more. Human beings depend on nature to stay alive. Nature helps us breathe, gives us food, water, shelter, medicines, and clothes. We find many colors in nature which make the Earth beautiful.</p>
+            <h2>MAria Sharapova</h2>
+            <img src="img/icon1.png" width="100">
+            <img src="img/icon2.png" width="100">
+            <img src="img/icon3.png" width="100">
+            <img src="img/icon4.png" width="100">
+        </div>
+
+        <div class="m-images" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
+            <img src="img/s1.jpg">
+            <img src="img/s2.jpg">
+            <img src="img/s3.jpg">
+            <img src="img/s4.jpg">
+            <img src="img/s5.jpg">
+            <img src="img/s6.jpg">
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="newsletter">
+            <div data-aos="fade-up" data-aos-offset="200" >
+                <h2>Subscribe Our Newsletter</h2>
+                <p>WE are a team of non-cynics who truly care for our work.</p>
+            </div>
+            <div class="ntext" data-aos="fade-up-right" data-aos-offset="200">
+                <label>
+                    <input type="text" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </label>
+            </div>
+        </div>
+        <div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+            <div>
+                <h2>Information</h2>
+                <p>Nature is made of everything we see around us and more.</p>
+
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-telegram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <p>About Us</p>
+                <p>Gallery</p>
+                <p>Blog Posts</p>
+                <p>Pricing Plans</p>
+            </div>
+
+            <div>
+                <h2>Details</h2>
+                <p>Photographers</p>
+                <p>Gallery</p>
+                <p>About</p>
+                <p>Pricing Plans</p>
+            </div>
+
+            <div>
+                <h2>Help & Support</h2>
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+                <p>Technical Support</p>
+                <p>Customer Care</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.portfolio-item').isotope({
+    // options
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+    });
+
+    $('.portfolio-menu ul li').click(function(){$('.portfolio-menu ul li').removeClass('active');$(this).addClass('active');
+
+    var selector  = $(this).attr('data-filter');$('.portfolio-item').isotope({filter: selector});
+
+    return false;
+});
+
+   </script>
+   
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="bower_components/aos/dist/aos.js"></script> -->
+    <script>
+        AOS.init();
+      </script>
+<!-- the above link is to add AOS aka Animate On Scroll library. we can set animation to the elements as they scroll into the view or viewport. -->
 </body>
 </html>
